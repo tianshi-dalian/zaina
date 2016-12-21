@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="6px" /><!-- 设置圆角半径 -->
+    <!--&lt;!&ndash; 描边 &ndash;&gt;-->
+    <!--<stroke-->
+    <!--android:width="2px"-->
+    <!--android:color="@color/color_hui"/>-->
+    <!-- 填充 -->
+    <solid android:color="@color/android_theme" /><!-- 填充的颜色 -->
+
+</shape>

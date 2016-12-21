@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/iv_01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:indicator="Pacman"
+        app:indicator_color="#FF0000">
+
+    </com.wang.avi.AVLoadingIndicatorView>
+
+
+</LinearLayout>

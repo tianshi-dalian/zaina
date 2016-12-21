@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_01"></include>
+
+    <com.zaina.utils.CircleImageView
+        android:id="@+id/iv_01"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150px"
+        android:src="@mipmap/hugh"
+        app:civ_border_color="@color/android_theme"
+        app:civ_border_width="5px" />
+    <!--输入账号-->
+    <LinearLayout
+        android:layout_width="650px"
+        android:layout_height="90px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100px"
+        android:background="@drawable/edittext_them"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@mipmap/access" />
+
+        <EditText
+            android:id="@+id/et_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入账号"
+            android:paddingLeft="10px"
+            android:textCursorDrawable="@color/android_theme"
+            android:textSize="20px" />
+
+
+    </LinearLayout>
+    <!--密码-->
+    <LinearLayout
+        android:layout_width="650px"
+        android:layout_height="90px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20px"
+        android:background="@drawable/edittext_them"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:paddingLeft="5px"
+            android:src="@mipmap/pw_bg" />
+
+        <EditText
+            android:id="@+id/et_02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:paddingLeft="15px"
+            android:textCursorDrawable="@color/android_theme"
+            android:textSize="20px" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_03"
+        android:layout_width="650px"
+        android:layout_height="90px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50px"
+        android:background="@drawable/bt_them"
+        android:gravity="center"
+        android:text="登录"
+        android:clickable="true"
+        android:textColor="@color/color_while"
+        android:textSize="@dimen/activity_textsize_30" />
+
+    <LinearLayout
+        android:layout_width="650px"
+        android:layout_height="50px"
+        android:layout_gravity="center"
+        android:layout_marginTop="30px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <!--记住密码-->
+
+        <!--滑块-->
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住密码"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/activity_textsize_30" />
+
+        <ImageView
+            android:id="@+id/iv_02"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginLeft="10px"
+            android:background="@mipmap/xuanze_hui"
+            android:clickable="true" />
+        <!--忘记密码-->
+        <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="忘记密码？"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/activity_textsize_30" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
