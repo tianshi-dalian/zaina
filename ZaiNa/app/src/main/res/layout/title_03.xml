@@ -4,21 +4,6 @@
     android:layout_height="150px"
     android:background="@color/android_theme">
 
-    <FrameLayout
-        android:layout_width="150px"
-        android:layout_height="150px"
-        android:layout_centerVertical="true"
-        android:clickable="true"
-        android:onClick="reTurn">
-
-        <ImageView
-            android:layout_width="60px"
-            android:layout_height="60px"
-            android:layout_gravity="center"
-            android:onClick="reTurn"
-            android:src="@mipmap/cehua_img" />
-    </FrameLayout>
-
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,6 +13,14 @@
         android:text="在哪儿"
         android:textColor="@color/color_while"
         android:textSize="@dimen/activity_textsize_60" />
+
+    <ImageView
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_marginRight="30px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/add_img" />
 
 
 </RelativeLayout>

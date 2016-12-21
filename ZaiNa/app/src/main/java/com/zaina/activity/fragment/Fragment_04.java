@@ -6,11 +6,13 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.zaina.R;
 import com.zaina.common.CommonFragment;
 
+import adaptation.AbViewUtil;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -38,6 +40,7 @@ public class Fragment_04 extends CommonFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        AbViewUtil.scaleContentView((LinearLayout) view.findViewById(R.id.rootLayout));
     }
 
 }
